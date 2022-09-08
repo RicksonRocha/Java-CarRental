@@ -6,7 +6,7 @@ package com.mycompany.carrent;
 
 import java.util.ArrayList;
 
-class Cliente {
+public class Cliente {
     public String nome;
     public String sobrenome;
     public String RG;
@@ -24,7 +24,6 @@ class Cliente {
         this.RG = RG;
         this.CPF = CPF;
         this.endereco = endereco;
-        ClienteList = new ArrayList();
     }
     
     public String getNome() {
@@ -65,17 +64,5 @@ class Cliente {
 
     public void setEndereco(String endereco) {
 	this.endereco = endereco;
-    }
-    
-    public ArrayList<Cliente> getListaCliente() {
-	return ClienteList;
-    }
-    
-    public void setListaCliente(ArrayList<Cliente> ClienteList) {
-	this.ClienteList = ClienteList;
-    }
-    
-    public void addCliente (Cliente C){
-        ClienteList.add(C);
     }
 }
