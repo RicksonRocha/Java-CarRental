@@ -4,12 +4,28 @@
  */
 package com.mycompany.carrent;
 
+import java.util.ArrayList;
+
 class Cliente {
     public String nome;
     public String sobrenome;
     public String RG;
     public String CPF;
-    public String endereço;
+    public String endereco;
+    ArrayList<Cliente> ClienteList;
+    
+    public Cliente(){
+        ClienteList = new ArrayList();
+    }
+    
+    public Cliente(String nome, String sobrenome, String RG, String CPF, String endereco){
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.RG = RG;
+        this.CPF = CPF;
+        this.endereco = endereco;
+        ClienteList = new ArrayList();
+    }
     
     public String getNome() {
 	return nome;
@@ -41,5 +57,25 @@ class Cliente {
 
     public void setCPF(String cpf) {
 	this.CPF = cpf;
+    }
+    
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+	this.endereco = endereco;
+    }
+    
+    public ArrayList<Cliente> getListaCliente() {
+	return ClienteList;
+    }
+    
+    public void setListaCliente(ArrayList<Cliente> ClienteList) {
+	this.ClienteList = ClienteList;
+    }
+    
+    public void addCliente (Cliente C){
+        ClienteList.add(C);
     }
 }
