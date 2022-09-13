@@ -15,6 +15,16 @@ public abstract class Veiculo implements VeiculoI {
     public Locacao locacao;
     public Categoria categoria;
 
+    public Veiculo(double valorDeCompra, String placa, int ano, Marca marca, Estado estado, Locacao locacao, Categoria categoria) {
+        this.valorDeCompra = valorDeCompra;
+        this.placa = placa;
+        this.ano = ano;
+        this.marca = marca;
+        this.estado = estado;
+        this.locacao = locacao;
+        this.categoria = categoria;
+    }
+    
     @Override
     public void locar(int dias, Calendar data, Cliente cliente) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
