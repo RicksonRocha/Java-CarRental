@@ -5,11 +5,6 @@
 package com.mycompany.carrent;
 
 public enum Marca {
-    VW, GM, Fiat, Honda, Mercedes, etc;
+    VW, GM, Fiat, Honda, Mercedes, Renault, Ferrari;
     
-    public String marca;
-    
-    public String getMarca(){
-        return  this.marca;
-    }
 }

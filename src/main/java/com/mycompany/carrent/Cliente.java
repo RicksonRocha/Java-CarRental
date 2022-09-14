@@ -12,11 +12,7 @@ public class Cliente {
     public String RG;
     public String CPF;
     public String endereco;
-    ArrayList<Cliente> ClienteList;
-    
-    public Cliente(){
-        ClienteList = new ArrayList();
-    }
+
     
     public Cliente(String nome, String sobrenome, String RG, String CPF, String endereco){
         this.nome = nome;

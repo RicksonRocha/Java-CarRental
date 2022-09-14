@@ -5,6 +5,5 @@
 package com.mycompany.carrent;
 
 public enum ModeloAutomovel {
-    Gol, Celta, Palio;
-    
+    Gol, Celta, Palio, Civic, Gla200, Sandero, Enzo;
 }

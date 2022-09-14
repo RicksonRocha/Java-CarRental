@@ -13,8 +13,8 @@ public class Automovel extends Veiculo{
         this.modelo = modelo;
     }
 
-  public ModeloAutomovel getModelo(){
-    return this.modelo;
+    public ModeloAutomovel getModelo(){
+        return this.modelo;
     }
     
   @Override

@@ -22,11 +22,13 @@ class Locacao {
     public double getValor(){
         return this.valor;
     }
-   public Calendar getData(){
+    public Calendar getData(){
        return this.data;
-   }
+    }
     public Cliente getCliente(){
         return this.cliente;
     }
+    
+    
     
 }
